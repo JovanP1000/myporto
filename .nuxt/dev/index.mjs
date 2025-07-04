@@ -3,40 +3,40 @@ import { Server } from 'node:http';
 import { resolve, dirname, join } from 'node:path';
 import nodeCrypto from 'node:crypto';
 import { parentPort, threadId } from 'node:worker_threads';
-import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, getRequestURL, getResponseHeader, getQuery as getQuery$1, readBody, getResponseStatus, createError, lazyEventHandler, useBase, createApp, createRouter as createRouter$1, toNodeListener, getRouterParam, getResponseStatusText } from 'file://D:/code/nuxt/my-portofolio/node_modules/h3/dist/index.mjs';
-import { escapeHtml } from 'file://D:/code/nuxt/my-portofolio/node_modules/@vue/shared/dist/shared.cjs.js';
-import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file://D:/code/nuxt/my-portofolio/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, joinRelativeURL } from 'file://D:/code/nuxt/my-portofolio/node_modules/ufo/dist/index.mjs';
-import { renderToString } from 'file://D:/code/nuxt/my-portofolio/node_modules/vue/server-renderer/index.mjs';
-import { klona } from 'file://D:/code/nuxt/my-portofolio/node_modules/klona/dist/index.mjs';
-import defu, { defuFn } from 'file://D:/code/nuxt/my-portofolio/node_modules/defu/dist/defu.mjs';
-import destr, { destr as destr$1 } from 'file://D:/code/nuxt/my-portofolio/node_modules/destr/dist/index.mjs';
-import { snakeCase } from 'file://D:/code/nuxt/my-portofolio/node_modules/scule/dist/index.mjs';
-import { createHead as createHead$1, propsToString, renderSSRHead } from 'file://D:/code/nuxt/my-portofolio/node_modules/unhead/dist/server.mjs';
-import { stringify, uneval } from 'file://D:/code/nuxt/my-portofolio/node_modules/devalue/index.js';
-import { isVNode, toValue, isRef } from 'file://D:/code/nuxt/my-portofolio/node_modules/vue/index.mjs';
-import { DeprecationsPlugin, PromisesPlugin, TemplateParamsPlugin, AliasSortingPlugin } from 'file://D:/code/nuxt/my-portofolio/node_modules/unhead/dist/plugins.mjs';
-import { createHooks } from 'file://D:/code/nuxt/my-portofolio/node_modules/hookable/dist/index.mjs';
-import { createFetch, Headers as Headers$1 } from 'file://D:/code/nuxt/my-portofolio/node_modules/ofetch/dist/node.mjs';
-import { fetchNodeRequestHandler, callNodeRequestHandler } from 'file://D:/code/nuxt/my-portofolio/node_modules/node-mock-http/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file://D:/code/nuxt/my-portofolio/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file://D:/code/nuxt/my-portofolio/node_modules/unstorage/drivers/fs.mjs';
-import { digest } from 'file://D:/code/nuxt/my-portofolio/node_modules/ohash/dist/index.mjs';
-import { toRouteMatcher, createRouter } from 'file://D:/code/nuxt/my-portofolio/node_modules/radix3/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, getRequestURL, getResponseHeader, getQuery as getQuery$1, readBody, getResponseStatus, createError, lazyEventHandler, useBase, createApp, createRouter as createRouter$1, toNodeListener, getRouterParam, getResponseStatusText } from 'file://D:/code/nuxt/myporto/node_modules/h3/dist/index.mjs';
+import { escapeHtml } from 'file://D:/code/nuxt/myporto/node_modules/@vue/shared/dist/shared.cjs.js';
+import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file://D:/code/nuxt/myporto/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, joinRelativeURL } from 'file://D:/code/nuxt/myporto/node_modules/ufo/dist/index.mjs';
+import { renderToString } from 'file://D:/code/nuxt/myporto/node_modules/vue/server-renderer/index.mjs';
+import { klona } from 'file://D:/code/nuxt/myporto/node_modules/klona/dist/index.mjs';
+import defu, { defuFn } from 'file://D:/code/nuxt/myporto/node_modules/defu/dist/defu.mjs';
+import destr, { destr as destr$1 } from 'file://D:/code/nuxt/myporto/node_modules/destr/dist/index.mjs';
+import { snakeCase } from 'file://D:/code/nuxt/myporto/node_modules/scule/dist/index.mjs';
+import { createHead as createHead$1, propsToString, renderSSRHead } from 'file://D:/code/nuxt/myporto/node_modules/unhead/dist/server.mjs';
+import { stringify, uneval } from 'file://D:/code/nuxt/myporto/node_modules/devalue/index.js';
+import { isVNode, toValue, isRef } from 'file://D:/code/nuxt/myporto/node_modules/vue/index.mjs';
+import { DeprecationsPlugin, PromisesPlugin, TemplateParamsPlugin, AliasSortingPlugin } from 'file://D:/code/nuxt/myporto/node_modules/unhead/dist/plugins.mjs';
+import { createHooks } from 'file://D:/code/nuxt/myporto/node_modules/hookable/dist/index.mjs';
+import { createFetch, Headers as Headers$1 } from 'file://D:/code/nuxt/myporto/node_modules/ofetch/dist/node.mjs';
+import { fetchNodeRequestHandler, callNodeRequestHandler } from 'file://D:/code/nuxt/myporto/node_modules/node-mock-http/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file://D:/code/nuxt/myporto/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file://D:/code/nuxt/myporto/node_modules/unstorage/drivers/fs.mjs';
+import { digest } from 'file://D:/code/nuxt/myporto/node_modules/ohash/dist/index.mjs';
+import { toRouteMatcher, createRouter } from 'file://D:/code/nuxt/myporto/node_modules/radix3/dist/index.mjs';
 import { readFile } from 'node:fs/promises';
-import consola, { consola as consola$1 } from 'file://D:/code/nuxt/my-portofolio/node_modules/consola/dist/index.mjs';
-import { ErrorParser } from 'file://D:/code/nuxt/my-portofolio/node_modules/youch-core/build/index.js';
-import { Youch } from 'file://D:/code/nuxt/my-portofolio/node_modules/youch/build/index.js';
-import { SourceMapConsumer } from 'file://D:/code/nuxt/my-portofolio/node_modules/source-map/source-map.js';
+import consola, { consola as consola$1 } from 'file://D:/code/nuxt/myporto/node_modules/consola/dist/index.mjs';
+import { ErrorParser } from 'file://D:/code/nuxt/myporto/node_modules/youch-core/build/index.js';
+import { Youch } from 'file://D:/code/nuxt/myporto/node_modules/youch/build/index.js';
+import { SourceMapConsumer } from 'file://D:/code/nuxt/myporto/node_modules/source-map/source-map.js';
 import { AsyncLocalStorage } from 'node:async_hooks';
-import { getContext } from 'file://D:/code/nuxt/my-portofolio/node_modules/unctx/dist/index.mjs';
-import { captureRawStackTrace, parseRawStackTrace } from 'file://D:/code/nuxt/my-portofolio/node_modules/errx/dist/index.js';
-import { walkResolver } from 'file://D:/code/nuxt/my-portofolio/node_modules/unhead/dist/utils.mjs';
+import { getContext } from 'file://D:/code/nuxt/myporto/node_modules/unctx/dist/index.mjs';
+import { captureRawStackTrace, parseRawStackTrace } from 'file://D:/code/nuxt/myporto/node_modules/errx/dist/index.js';
+import { walkResolver } from 'file://D:/code/nuxt/myporto/node_modules/unhead/dist/utils.mjs';
 import { fileURLToPath } from 'node:url';
-import { ipxFSStorage, ipxHttpStorage, createIPX, createIPXH3Handler } from 'file://D:/code/nuxt/my-portofolio/node_modules/ipx/dist/index.mjs';
-import { isAbsolute } from 'file://D:/code/nuxt/my-portofolio/node_modules/pathe/dist/index.mjs';
+import { ipxFSStorage, ipxHttpStorage, createIPX, createIPXH3Handler } from 'file://D:/code/nuxt/myporto/node_modules/ipx/dist/index.mjs';
+import { isAbsolute } from 'file://D:/code/nuxt/myporto/node_modules/pathe/dist/index.mjs';
 
-const serverAssets = [{"baseName":"server","dir":"D:/code/nuxt/my-portofolio/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"D:/code/nuxt/myporto/server/assets"}];
 
 const assets = createStorage();
 
@@ -48,11 +48,11 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets);
 
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"D:/code/nuxt/my-portofolio","watchOptions":{"ignored":[null]}}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"D:/code/nuxt/my-portofolio/server","watchOptions":{"ignored":[null]}}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"D:/code/nuxt/my-portofolio/.nuxt"}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"D:/code/nuxt/my-portofolio/.nuxt/cache"}));
-storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"D:/code/nuxt/my-portofolio/.data/kv"}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"D:/code/nuxt/myporto","watchOptions":{"ignored":[null]}}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"D:/code/nuxt/myporto/server","watchOptions":{"ignored":[null]}}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"D:/code/nuxt/myporto/.nuxt"}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"D:/code/nuxt/myporto/.nuxt/cache"}));
+storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"D:/code/nuxt/myporto/.data/kv"}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -657,7 +657,7 @@ const _inlineRuntimeConfig = {
     "alias": {},
     "fs": {
       "dir": [
-        "D:/code/nuxt/my-portofolio/public"
+        "D:/code/nuxt/myporto/public"
       ]
     },
     "http": {
@@ -1024,13 +1024,13 @@ if (!window.__NUXT_DEVTOOLS_TIME_METRIC__) {
 window.__NUXT_DEVTOOLS_TIME_METRIC__.appInit = Date.now()
 `;
 
-const _MDGWJR8XcAG56ZuQ9aBN7A8YpC5TaIHf4hxh3IARM = (function(nitro) {
+const _eNHIUeGgxjsHzh1Y6dRkgncnThZErvfHn_3x9qUXtE0 = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script}<\/script>`);
   });
 });
 
-const rootDir = "D:/code/nuxt/my-portofolio";
+const rootDir = "D:/code/nuxt/myporto";
 
 const appHead = {"meta":[{"charset":"utf-8"},{"name":"description","content":"Portfolio of Jery, Full Stack Developer"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"name":"theme-color","content":"#3182ce"},{"name":"msapplication-TileColor","content":"#3182ce"}],"link":[{"rel":"icon","type":"image/x-icon","href":"/favicon.ico"},{"rel":"icon","type":"image/svg+xml","href":"/favicon.svg"},{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"},{"rel":"manifest","href":"/site.webmanifest"}],"style":[],"script":[],"noscript":[],"title":"Jery - Full Stack Developer"};
 
@@ -1049,7 +1049,7 @@ const devReducers = {
   URL: (data) => data instanceof URL ? data.toString() : void 0
 };
 const asyncContext = getContext("nuxt-dev", { asyncContext: true, AsyncLocalStorage });
-const _HcxccVqHkgehj9wO5xopq483vgFUk113hg3aHqCwvs = (nitroApp) => {
+const _ePULgAurrmBvkSQi3bKefYb45JO73iSZrjozbO2Jao = (nitroApp) => {
   const handler = nitroApp.h3App.handler;
   nitroApp.h3App.handler = (event) => {
     return asyncContext.callAsync({ logs: [], event }, () => handler(event));
@@ -1119,8 +1119,8 @@ function onConsoleLog(callback) {
 }
 
 const plugins = [
-  _MDGWJR8XcAG56ZuQ9aBN7A8YpC5TaIHf4hxh3IARM,
-_HcxccVqHkgehj9wO5xopq483vgFUk113hg3aHqCwvs
+  _eNHIUeGgxjsHzh1Y6dRkgncnThZErvfHn_3x9qUXtE0,
+_ePULgAurrmBvkSQi3bKefYb45JO73iSZrjozbO2Jao
 ];
 
 const VueResolver = (_, value) => {
@@ -1194,8 +1194,8 @@ function publicAssetsURL(...path) {
 
 const APP_ROOT_OPEN_TAG = `<${appRootTag}${propsToString(appRootAttrs)}>`;
 const APP_ROOT_CLOSE_TAG = `</${appRootTag}>`;
-const getServerEntry = () => import('file://D:/code/nuxt/my-portofolio/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
-const getClientManifest = () => import('file://D:/code/nuxt/my-portofolio/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getServerEntry = () => import('file://D:/code/nuxt/myporto/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const getClientManifest = () => import('file://D:/code/nuxt/myporto/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
 const getSSRRenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();
   if (!manifest) {
@@ -1517,7 +1517,7 @@ async function runTask(name, {
   }
 }
 
-const _8CgnTG = lazyEventHandler(() => {
+const _aXOztb = lazyEventHandler(() => {
   const opts = useRuntimeConfig().ipx || {};
   const fsDir = opts?.fs?.dir ? (Array.isArray(opts.fs.dir) ? opts.fs.dir : [opts.fs.dir]).map((dir) => isAbsolute(dir) ? dir : fileURLToPath(new URL(dir, globalThis._importMeta_.url))) : void 0;
   const fsStorage = opts.fs?.dir ? ipxFSStorage({ ...opts.fs, dir: fsDir }) : void 0;
@@ -1535,17 +1535,17 @@ const _8CgnTG = lazyEventHandler(() => {
   return useBase(opts.baseURL, ipxHandler);
 });
 
-const _lazy_iGZz9r = () => Promise.resolve().then(function () { return contact_post$1; });
-const _lazy_644ieO = () => Promise.resolve().then(function () { return projects_get$1; });
-const _lazy_NcQVI9 = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_Rj9fNP = () => Promise.resolve().then(function () { return contact_post$1; });
+const _lazy_RVSbjP = () => Promise.resolve().then(function () { return projects_get$1; });
+const _lazy_bm0Ywu = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '/api/contact', handler: _lazy_iGZz9r, lazy: true, middleware: false, method: "post" },
-  { route: '/api/projects', handler: _lazy_644ieO, lazy: true, middleware: false, method: "get" },
-  { route: '/__nuxt_error', handler: _lazy_NcQVI9, lazy: true, middleware: false, method: undefined },
+  { route: '/api/contact', handler: _lazy_Rj9fNP, lazy: true, middleware: false, method: "post" },
+  { route: '/api/projects', handler: _lazy_RVSbjP, lazy: true, middleware: false, method: "get" },
+  { route: '/__nuxt_error', handler: _lazy_bm0Ywu, lazy: true, middleware: false, method: undefined },
   { route: '/__nuxt_island/**', handler: _SxA8c9, lazy: false, middleware: false, method: undefined },
-  { route: '/_ipx/**', handler: _8CgnTG, lazy: false, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_NcQVI9, lazy: true, middleware: false, method: undefined }
+  { route: '/_ipx/**', handler: _aXOztb, lazy: false, middleware: false, method: undefined },
+  { route: '/**', handler: _lazy_bm0Ywu, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
