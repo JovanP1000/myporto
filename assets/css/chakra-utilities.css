@@ -1,0 +1,106 @@
+/* Layout */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 var(--chakra-space-4); }
+.flex { display: flex; }
+.inline-flex { display: inline-flex; }
+.grid { display: grid; }
+.block { display: block; }
+.hidden { display: none; }
+
+/* Flexbox */
+.items-center { align-items: center; }
+.items-start { align-items: flex-start; }
+.items-end { align-items: flex-end; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.justify-start { justify-content: flex-start; }
+.justify-end { justify-content: flex-end; }
+.flex-col { flex-direction: column; }
+.flex-row { flex-direction: row; }
+.flex-wrap { flex-wrap: wrap; }
+
+/* Spacing */
+.p-0 { padding: 0; }
+.p-1 { padding: var(--chakra-space-1); }
+.p-2 { padding: var(--chakra-space-2); }
+.p-3 { padding: var(--chakra-space-3); }
+.p-4 { padding: var(--chakra-space-4); }
+.p-5 { padding: var(--chakra-space-5); }
+.p-6 { padding: var(--chakra-space-6); }
+.p-8 { padding: var(--chakra-space-8); }
+
+.m-0 { margin: 0; }
+.m-1 { margin: var(--chakra-space-1); }
+.m-2 { margin: var(--chakra-space-2); }
+.m-3 { margin: var(--chakra-space-3); }
+.m-4 { margin: var(--chakra-space-4); }
+.m-5 { margin: var(--chakra-space-5); }
+.m-6 { margin: var(--chakra-space-6); }
+.m-8 { margin: var(--chakra-space-8); }
+
+/* Colors */
+.text-gray-50 { color: var(--chakra-colors-gray-50); }
+.text-gray-100 { color: var(--chakra-colors-gray-100); }
+.text-gray-600 { color: var(--chakra-colors-gray-600); }
+.text-gray-700 { color: var(--chakra-colors-gray-700); }
+.text-gray-800 { color: var(--chakra-colors-gray-800); }
+.text-gray-900 { color: var(--chakra-colors-gray-900); }
+.text-blue-500 { color: var(--chakra-colors-blue-500); }
+.text-blue-600 { color: var(--chakra-colors-blue-600); }
+
+.bg-white { background-color: #ffffff; }
+.bg-gray-50 { background-color: var(--chakra-colors-gray-50); }
+.bg-gray-100 { background-color: var(--chakra-colors-gray-100); }
+.bg-gray-800 { background-color: var(--chakra-colors-gray-800); }
+.bg-gray-900 { background-color: var(--chakra-colors-gray-900); }
+.bg-blue-500 { background-color: var(--chakra-colors-blue-500); }
+.bg-blue-600 { background-color: var(--chakra-colors-blue-600); }
+
+/* Typography */
+.font-heading { font-family: var(--chakra-fonts-heading); }
+.font-body { font-family: var(--chakra-fonts-body); }
+.font-mono { font-family: var(--chakra-fonts-mono); }
+
+.text-xs { font-size: var(--chakra-fontSizes-xs); }
+.text-sm { font-size: var(--chakra-fontSizes-sm); }
+.text-md { font-size: var(--chakra-fontSizes-md); }
+.text-lg { font-size: var(--chakra-fontSizes-lg); }
+.text-xl { font-size: var(--chakra-fontSizes-xl); }
+.text-2xl { font-size: var(--chakra-fontSizes-2xl); }
+.text-3xl { font-size: var(--chakra-fontSizes-3xl); }
+.text-4xl { font-size: var(--chakra-fontSizes-4xl); }
+.text-5xl { font-size: var(--chakra-fontSizes-5xl); }
+
+.font-light { font-weight: 300; }
+.font-normal { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+
+/* Borders & Shadows */
+.rounded-sm { border-radius: var(--chakra-radii-sm); }
+.rounded-md { border-radius: var(--chakra-radii-md); }
+.rounded-lg { border-radius: var(--chakra-radii-lg); }
+.rounded-xl { border-radius: var(--chakra-radii-xl); }
+.rounded-2xl { border-radius: var(--chakra-radii-2xl); }
+.rounded-full { border-radius: var(--chakra-radii-full); }
+
+.shadow-sm { box-shadow: var(--chakra-shadows-sm); }
+.shadow-md { box-shadow: var(--chakra-shadows-md); }
+.shadow-lg { box-shadow: var(--chakra-shadows-lg); }
+.shadow-xl { box-shadow: var(--chakra-shadows-xl); }
+
+/* Positioning */
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+.sticky { position: sticky; }
+
+/* Width & Height */
+.w-full { width: 100%; }
+.h-full { height: 100%; }
+.min-h-screen { min-height: 100vh; }
+
+/* Transitions */
+.transition { transition: all 0.2s ease-in-out; }
+.hover\:scale-105:hover { transform: scale(1.05); }
+.hover\:shadow-lg:hover { box-shadow: var(--chakra-shadows-lg); }

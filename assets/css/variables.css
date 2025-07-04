@@ -1,0 +1,62 @@
+:root {
+    /* Colors - Chakra inspired */
+    --chakra-colors-gray-50: #f7fafc;
+    --chakra-colors-gray-100: #edf2f7;
+    --chakra-colors-gray-200: #e2e8f0;
+    --chakra-colors-gray-300: #cbd5e0;
+    --chakra-colors-gray-400: #a0aec0;
+    --chakra-colors-gray-500: #718096;
+    --chakra-colors-gray-600: #4a5568;
+    --chakra-colors-gray-700: #2d3748;
+    --chakra-colors-gray-800: #1a202c;
+    --chakra-colors-gray-900: #171923;
+    
+    --chakra-colors-blue-50: #ebf8ff;
+    --chakra-colors-blue-500: #3182ce;
+    --chakra-colors-blue-600: #2b77cb;
+    --chakra-colors-blue-700: #2c5aa0;
+    
+    /* Spacing */
+    --chakra-space-1: 0.25rem;
+    --chakra-space-2: 0.5rem;
+    --chakra-space-3: 0.75rem;
+    --chakra-space-4: 1rem;
+    --chakra-space-5: 1.25rem;
+    --chakra-space-6: 1.5rem;
+    --chakra-space-8: 2rem;
+    --chakra-space-10: 2.5rem;
+    --chakra-space-12: 3rem;
+    --chakra-space-16: 4rem;
+    --chakra-space-20: 5rem;
+    
+    /* Typography */
+    --chakra-fonts-heading: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --chakra-fonts-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --chakra-fonts-mono: 'Fira Code', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    
+    /* Font sizes */
+    --chakra-fontSizes-xs: 0.75rem;
+    --chakra-fontSizes-sm: 0.875rem;
+    --chakra-fontSizes-md: 1rem;
+    --chakra-fontSizes-lg: 1.125rem;
+    --chakra-fontSizes-xl: 1.25rem;
+    --chakra-fontSizes-2xl: 1.5rem;
+    --chakra-fontSizes-3xl: 1.875rem;
+    --chakra-fontSizes-4xl: 2.25rem;
+    --chakra-fontSizes-5xl: 3rem;
+    
+    /* Shadows */
+    --chakra-shadows-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --chakra-shadows-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --chakra-shadows-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --chakra-shadows-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    
+    /* Border radius */
+    --chakra-radii-sm: 0.125rem;
+    --chakra-radii-md: 0.375rem;
+    --chakra-radii-lg: 0.5rem;
+    --chakra-radii-xl: 0.75rem;
+    --chakra-radii-2xl: 1rem;
+    --chakra-radii-full: 9999px;
+  }
+  
